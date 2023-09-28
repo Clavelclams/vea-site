@@ -9,16 +9,23 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  padding: 20px 10%;
+  padding: 20px ;
   background-color: #000; /* black */
   color: #fff; /* white */
   align-items: center;
 }
 
 header .logo img {
-  height: 90px;
+  margin-left: 20px;
+  height: 100px;
 }
-
+.header .card {
+  margin-left: auto;
+}
+/* je commente se background pour pas le perdre la couleur et celui du deuxieme logo */
+/* header nav {
+  background-color: rgba(50,14,14,255) ;
+} */
 header nav ul {
   display: flex;
   list-style-type: none;
@@ -37,11 +44,6 @@ header nav ul li a {
 header nav ul li a:hover {
   color: #FF0000; /* red */
 }
-
-.header .card {
-  margin-left: auto;
-}
-
 /* CSS for presentation section */
 .presentation {
   display: flex;
@@ -53,7 +55,7 @@ header nav ul li a:hover {
 }
 
 section.presentation{
-  background-image: url(file:///C:/Users/clave/OneDrive/Documents/devloppeur%20-%20Copie/velito%20esport%20amiens/developpeur/vea%20site/images/banner_vide.jpg);
+  background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url("/images/banner_vide.jpg");
   background-repeat: repeat;
 }
 section.presentation .present{
@@ -471,3 +473,66 @@ section.presentation .present{
 .tournament:hover, .events:hover {
   transform: scale(1.05); /* Lors de la survol, la div augmentera légèrement en taille */
 }
+
+/* section test */
+/* .card {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 0 0 0 5px #ffffff80;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card svg {
+  width: 48px;
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.card__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover .card__content {
+  transform: rotateX(0deg);
+}
+
+.card__title {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+  font-weight: 700;
+}
+
+.card:hover svg {
+  scale: 0;
+}
+
+.card__description {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #777;
+  line-height: 1.4;
+} */
