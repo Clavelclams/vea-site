@@ -1,0 +1,473 @@
+/* CSS for body */
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* CSS for header */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10%;
+  background-color: #000; /* black */
+  color: #fff; /* white */
+  align-items: center;
+}
+
+header .logo img {
+  height: 90px;
+}
+
+header nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  color: #fff; /* white */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #FF0000; /* red */
+}
+
+.header .card {
+  margin-left: auto;
+}
+
+/* CSS for presentation section */
+.presentation {
+  display: flex;
+  justify-content: space-between;
+  /*margin: 50px 10%; /* 10% margin on left and right */
+  color: #0c0c0c; /* dark gray */
+  align-items: center;
+  background-size: auto;
+}
+
+section.presentation{
+  background-image: url(file:///C:/Users/clave/OneDrive/Documents/devloppeur%20-%20Copie/velito%20esport%20amiens/developpeur/vea%20site/images/banner_vide.jpg);
+  background-repeat: repeat;
+}
+section.presentation .present{
+  background-color: #e7d8d8;
+}
+
+.content{
+  margin: 50px 10%;
+
+}
+.presentation .content {
+  width: 50%;
+  text-align: center;
+}
+
+.presentation .content h1 {
+  font-weight: 900;
+}
+
+.presentation .content p {
+  line-height: 1.5;
+}
+
+.presentation .content a {
+  text-decoration: none;
+}
+
+  
+.presentation .content #button {
+  position: relative;
+  height: 50px;
+  padding: 0 30px;
+  border: 2px solid #000;
+  background: #e8e8e8;
+  user-select: none;
+  white-space: nowrap;
+  transition: all .05s linear;
+  font-family: inherit;
+}
+  
+  .presentation .content #button:before, 
+  .presentation .content #button:after {
+    content: "";
+    position: absolute;
+    background: #e8e8e8;
+    transition: all .2s linear;
+  }
+  
+  .presentation .content #button:before {
+    width: calc(100% + 6px);
+    height: calc(100% - 16px);
+    top: 8px;
+    left: -3px;
+  }
+  
+  .presentation .content #button:after {
+    width: calc(100% - 16px);
+    height: calc(100% + 6px);
+    top: -3px;
+    left: 8px;
+  }
+  
+  .presentation .content #button:hover {
+    cursor: crosshair;
+  }
+  
+  .presentation .content #button:active {
+    transform: scale(0.95);
+  }
+  
+  .presentation .content #button:hover:before {
+    height: calc(100% - 32px);
+    top: 16px;
+  }
+  
+  .presentation .content #button:hover:after {
+    width: calc(100% - 32px);
+    left: 16px;
+  }
+  
+  .presentation .content #button span {
+    font-size: 15px;
+    z-index: 3;
+    position: relative;
+    font-weight: 600;
+  }
+  
+  .presentation .image {
+    width: 50%;
+  }
+  
+  .presentation .image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+/* navbar social */
+.card svg {
+  height: 25px;
+}
+
+.card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #e7e7e7;
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+          box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  overflow: hidden;
+  height: 50px;
+  width: 200px;
+}
+
+.card::before, .card::after {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  height: 100%;
+  -webkit-transition: 0.25s linear;
+  transition: 0.25s linear;
+  z-index: 1;
+}
+
+.card::before {
+  content: "";
+  left: 0;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-color: #4d60b6;
+}
+
+.card::after {
+  content: "";
+  right: 0;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: #4453a6;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+          box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.card:hover span {
+  opacity: 0;
+  z-index: -3;
+}
+
+.card:hover::before {
+  opacity: 0.5;
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.card:hover::after {
+  opacity: 0.5;
+  -webkit-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+          transform: translateY(100%);
+}
+
+.card span {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: whitesmoke;
+  font-family: 'Fira Mono', monospace;
+  font-size: 24px;
+  font-weight: 700;
+  opacity: 1;
+  -webkit-transition: opacity 0.25s;
+  transition: opacity 0.25s;
+  z-index: 2;
+}
+
+.card .social-link {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 25%;
+  height: 100%;
+  color: whitesmoke;
+  font-size: 24px;
+  text-decoration: none;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.card .social-link svg {
+  text-shadow: 1px 1px rgba(31, 74, 121, 0.7);
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+
+.card .social-link:hover {
+  background-color: rgba(249, 244, 255, 0.774);
+  -webkit-animation: bounce_613 0.4s linear;
+          animation: bounce_613 0.4s linear;
+}
+
+@-webkit-keyframes bounce_613 {
+  40% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+
+  60% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+
+  80% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes bounce_613 {
+  40% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+
+  60% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+
+  80% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+/* section présentation carte */
+.carte {
+  width: 500px;
+  height: 500px;
+  background: rgba(211, 211, 211, 0.199);
+  position: absolute;
+  transition: .3s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.3);
+}
+
+#carte1, #carte3 {
+  background-image: url('file:///C:/Users/clave/OneDrive/Documents/devloppeur%20-%20Copie/velito%20esport%20amiens/developpeur/vea%20site/images/logo-news.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#carte2, #carte4 {
+  background-image: url('file:///C:/Users/clave/OneDrive/Documents/devloppeur%20-%20Copie/velito%20esport%20amiens/developpeur/vea%20site/images/logo 1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.notre:hover #carte1 {
+  transform: translateX(-100px) rotate(-40deg);
+}
+
+.notre:hover #carte2 {
+  transform: translateX(-50px) rotate(-30deg);
+}
+
+.notre:hover #carte3 {
+  transform: translateX(0) rotate(-20deg);
+}
+
+.notre:hover #carte4 {
+  transform: translateX(50px) rotate(-10deg);
+}
+
+#carte1:hover {
+  transform: translateX(-150px) rotate(0deg) !important;
+}
+
+#carte2:hover {
+  transform: translateX(-100px) rotate(0deg) !important;
+}
+
+#carte3:hover {
+  transform: translateX(-50px) rotate(0deg) !important;
+}
+
+#carte4:hover {
+  transform: translateX(50px) rotate(0deg) !important;
+}
+
+.notre {
+  display: grid;
+  height: 50vmax;
+  place-items: center;
+}
+
+
+/* section association */
+.association {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.association h1 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.info-card {
+  width: 30%;
+  margin: 10px;
+  padding: 20px;
+  background-color: #f1f1f1;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.info-card h2 {
+  color: #333;
+}
+
+.info-card p {
+  color: #666;
+}
+
+/* section promotion  */
+/* section promotion  */
+.promote {
+  background-image: url('file:///C:/Users/clave/OneDrive/Documents/devloppeur%20-%20Copie/velito%20esport%20amiens/developpeur/vea%20site/images/logo 1.png');
+  background-size: cover;
+  padding: 15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.promo-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%; /* Pour rendre l'image ronde */
+}
+
+.promo-content {
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8); /* Ajouter un fond semi-transparent pour rendre le texte plus lisible */
+  border-radius: 10px; /* Arrondir les coins de la div */
+}
+
+.activity {
+  text-align: center;
+  width: 45%;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8); /* Ajouter un fond semi-transparent pour rendre le texte plus lisible */
+  border-radius: 10px; /* Arrondir les coins de la div */
+  box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.1); /* Ajouter une ombre pour donner un effet de profondeur */
+}
+
+.tournament, .events {
+  transition: transform 0.3s ease; /* Préparation pour l'effet de survol */
+}
+
+.tournament:hover, .events:hover {
+  transform: scale(1.05); /* Lors de la survol, la div augmentera légèrement en taille */
+}
